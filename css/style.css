@@ -1,0 +1,26 @@
+body {
+	background-color: rgb(34, 39, 39);
+}
+input {position: absolute;}
+
+input + label {
+	padding: 0 0 5px 40px;
+	cursor: pointer;
+	display: inline-block;
+	color: whitesmoke;
+}
+
+input[id=radio_1]:checked + label{color: rgb(65, 65, 235)}
+input[id=radio_2]:checked + label{color: rgb(229, 255, 0)}
+input:checked + label:after {content: " checked";}
+
+#blocks {display:flex; margin-top: 20px;}
+#blocks div {
+	margin-left: 5px;
+	padding: 10px 2px 10px 2px;
+	border-radius: 5px;
+}
+.first {order: 3; background-color:green;}
+.second {order: 4; background-color:blue;}
+.third {order: 1; background-color:blue;}
+.fourth {order: 2; background-color:red;}
